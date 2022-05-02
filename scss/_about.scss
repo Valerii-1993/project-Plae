@@ -1,0 +1,204 @@
+.about {
+  &__item {
+    display: flex;
+    align-items: center;
+  }
+
+  &__title {
+    margin-bottom: 33px;
+    @media (max-width: $laptop) {
+      font-size: 25px;
+      line-height: 1.1;
+    }
+    @media (max-width: $tablet) {
+      margin-bottom: 15px;
+      margin-top: 10px;
+    }
+  }
+
+  &__title-charlie {
+    margin-bottom: 120px;
+    @media (max-width: $laptop) {
+      font-size: 25px;
+      line-height: 1.1;
+    }
+    @media (max-width: $tablet) {
+      margin-top: 15px;
+      margin-bottom: 35px;
+    }
+  }
+
+  &__img {
+    max-width: 640px;
+
+    @media (max-width: $laptop) {
+      max-width: 500px;
+    }
+    @media (max-width: $tablet) {
+      max-width: 350px;
+    }
+    @media (max-width: $mobile) {
+      max-width: 320px;
+    }
+  }
+
+  &__text {
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.04em;
+    max-width: 400px;
+    text-align: left;
+    margin-bottom: 23px;
+    @media (max-width: 1024px) {
+      text-align: center;
+      margin-bottom: 10px;
+      max-width: 750px;
+      padding: 0 20px;
+    }
+  }
+
+  &__text-edie {
+    font-size: 17px;
+    line-height: 1.5;
+    font-weight: 200;
+    letter-spacing: 0.05em;
+    max-width: 396px;
+    text-align: left;
+    margin-top: 95px;
+    margin-bottom: 95px;
+    @media (max-width: $tablet) {
+      margin-top: 25px;
+      margin-bottom: 20px;
+    }
+  }
+
+  &__box {
+    text-align: center;
+    margin: 0 auto;
+    padding: 10px;
+  }
+
+  &__user {
+    font-size: 19px;
+    line-height: 1;
+    letter-spacing: 0em;
+    @media (max-width: $tablet) {
+      margin-bottom: 15px;
+    }
+  }
+}
+
+.for_quote {
+  position: relative;
+  text-align: center;
+  max-width: 291px;
+  font-size: 21px;
+  line-height: 1.44;
+  letter-spacing: 0.025em;
+  font-weight: 300;
+  @media (max-width: $tablet) {
+    max-width: 410px;
+  }
+  @media (max-width: $mobile-L) {
+    max-width: 310px;
+  }
+}
+
+.for_quote:nth-child(2) {
+  max-width: 329px;
+  margin-bottom: 100px;
+  letter-spacing: 0.027em;
+
+  @media (max-width: $laptop) {
+    margin-bottom: 56px;
+    margin-top: 56px;
+  }
+  @media (max-width: $mobile-L) {
+    max-width: 310px;
+  }
+}
+
+.for_quote::before,
+.for_quote::after {
+  content: "";
+  position: absolute;
+  background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABoAAAAQCAYAAAAI0W+oAAAAIGNIUk0AAHomAACAhAAA+gAAAIDoAAB1MAAA6mAAADqYAAAXcJy6UTwAAAAGYktHRAD/AP8A/6C9p5MAAAAHdElNRQflCxYKBCWqAI1WAAAA3klEQVQ4y52TURGDMBBEHx0MgAQqAQsgAQtYiJZqqIVaqAOKBJDQfjQwFO4W6M3wk7D3stlL0nUdRpXAzVivgRG/qqhb/1OnjiBE2NkKQGFtJI6jt7E2ArmAZMBgrPfA9WJsNE6j544bT/cAsECtEoiSujUo4xvoWVCGn6kJakSz/g83Y/w2oCAgaqw90JzrEpThjObOtRVHdEtQK5opUDiiW76jlzhZLq5uiLchdZMjZX8O1KhSQH5ynUDKvnqoh3UTSI21ykfp7mtQJewrkIJsHKURonLwHqrSjWvdB4KKOHRvR0+ZAAAAAElFTkSuQmCC");
+  width: 25px;
+  height: 16px;
+}
+
+.for_quote::before {
+  left: -30px;
+  top: -42px;
+
+  @media (max-width: $laptop) {
+    left: -11px;
+    top: -37px;
+  }
+  @media (max-width: $mobile-L) {
+    left: -3px;
+    top: -22px;
+  }
+}
+
+.for_quote::after {
+  right: -30px;
+  bottom: -11px;
+  transform: rotate(180deg);
+
+  @media (max-width: $laptop) {
+    right: 7px;
+    bottom: -14px;
+  }
+  @media (max-width: $mobile-L) {
+    right: -5px;
+  }
+}
+
+.about__text-charlie.for_quote::after {
+  right: -13px;
+  bottom: 0;
+  @media (max-width: $laptop) {
+    right: 5px;
+    bottom: -20px;
+  }
+  @media (max-width: $mobile-L) {
+    right: -8px;
+    bottom: -7px;
+  }
+}
+
+.about__text-charlie.for_quote::before {
+  left: -10px;
+  top: -41px;
+
+  @media (max-width: $laptop) {
+    left: -1px;
+    top: -29px;
+  }
+  @media (max-width: $mobile-L) {
+    left: -10px;
+    top: -24px;
+  }
+}
+
+.about__item:not(:nth-child(2)) {
+  @media (max-width: 1024px) {
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+}
+.about__item:nth-child(2) {
+  @media (max-width: 1024px) {
+    align-items: center;
+    flex-direction: column;
+  }
+}
+
+.for_quote:nth-child(2) {
+  @media (max-width: 1024px) {
+    max-width: 410px;
+    margin-bottom: 30px;
+    margin-top: 30px;
+  }
+}

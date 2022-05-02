@@ -1,0 +1,142 @@
+.find-us {
+  padding-top: 89px;
+  padding-bottom: 69px;
+
+  @media (max-width: $tablet) {
+    padding-bottom: 16px;
+  }
+  @media (max-width: $mobile-L) {
+    padding-top: 35px;
+  }
+  @media (max-width: $mobile) {
+    padding-top: 25px;
+  }
+
+  &__title {
+    @media (max-width: $mobile) {
+      font-size: 25px;
+    }
+  }
+
+  &__heading {
+    text-align: center;
+    margin-bottom: 64px;
+    @media (max-width: $tablet) {
+      margin-bottom: 15px;
+    }
+  }
+
+  &__box {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 32px;
+    margin-left: 55px;
+
+    @media (max-width: $laptop) {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-around;
+    }
+    @media (max-width: $tablet) {
+      margin-bottom: 10px;
+    }
+    @media (max-width: $mobile-L) {
+      text-align: center;
+      margin: 0 auto;
+      padding-bottom: 15px;
+    }
+  }
+
+  &__item {
+    width: 128px;
+    margin-right: 83px;
+    margin-bottom: 49px;
+
+    @media (max-width: $tablet) {
+      width: 128px;
+      margin-bottom: 10px;
+    }
+    @media (max-width: $mobile-L) {
+      width: 250px;
+      text-align: center;
+      margin: 0;
+    }
+    @media (max-width: $mobile) {
+      width: 200px;
+      text-align: center;
+      margin: 0;
+    }
+  }
+
+  &__item-title {
+    font-weight: 600;
+    font-size: 17px;
+  }
+
+  &__address {
+    font-size: 15px;
+    line-height: 1.5;
+    letter-spacing: 0.01em;
+  }
+
+  &__email {
+    font-size: 16px;
+    line-height: 2.2;
+    letter-spacing: -0.04em;
+    color: #1faa50;
+    &:hover {
+      color: #c08f09;
+    }
+  }
+
+  &__mobile:hover {
+    color: #c08f09;
+  }
+
+  &__contacts {
+    text-align: center;
+    margin-bottom: 28px;
+    @media (max-width: $mobile) {
+      margin-bottom: 5px;
+    }
+  }
+
+  &__contacts-title {
+    font: 600 24px/1.48 $secondary-font;
+    letter-spacing: 0.005em;
+  }
+
+  &__contacts-text {
+    font-size: 18px;
+    line-height: 2;
+    font-weight: 300;
+  }
+
+  &__contacts-container {
+    display: flex;
+    justify-content: space-between;
+    max-width: 350px;
+    margin: 0 auto;
+    padding-right: 12px;
+    @media (max-width: $mobile-L) {
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+
+  &__contacts-tel {
+    font: 300 18px/2.11 $main-font;
+    letter-spacing: 0.01em;
+    &:hover {
+      color: #c08f09;
+    }
+  }
+  &__contacts-email {
+    font: 300 18px/2.11 $main-font;
+    letter-spacing: -0.03em;
+    color: #20ab50;
+    &:hover {
+      color: #c08f09;
+    }
+  }
+}

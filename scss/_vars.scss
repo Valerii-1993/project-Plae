@@ -1,0 +1,76 @@
+$mobile: 380px;
+$mobile-L: 450px;
+$tablet: 795px;
+$laptop: 1050px;
+
+$secondary-font: "Nunito", sans-serif;
+$main-font: "Yantramanav", sans-serif;
+
+
+.title {
+  font: 700 29px/1.2 $secondary-font;
+  margin-bottom: 8px;
+}
+
+.subtitle {
+  font: 300 18px/2.1 $main-font;
+  letter-spacing: 0.005em;
+}
+
+.form {
+  max-width: 500px;
+  position: relative;
+  margin: 0 auto;
+  display: flex;
+  padding: 0 15px;
+
+  @media (max-width: $mobile-L) {
+    max-width: 400px;
+  }
+  @media (max-width: $mobile) {
+    max-width: 279px;
+  }
+
+  &__input {
+    border: none;
+    width: 319px;
+    background-color: #ffffff;
+    border-radius: 22px 0 0 22px;
+    padding: 12px 9px 12px 21px;
+
+    @media (max-width: $mobile) {
+      width: 160px;
+      padding: 7px 1px 7px 13px;
+      font-size: 16px;
+    }
+  }
+
+  &__input::placeholder {
+    font-size: 18px;
+    line-height: 1;
+    font-weight: 300;
+    letter-spacing: 0.02em;
+    color: #8c8c8c;
+
+    @media (max-width: $mobile) {
+      font-size: 17px;
+    }
+  }
+
+  &__button {
+    width: 162px;
+    color: #ffffff;
+    background-color: #20ab50;
+    border-radius: 0px 22px 22px 0px;
+    font: 600 20px/1 $secondary-font;
+    letter-spacing: 0.03em;
+    &:hover {
+      background-color: #c08f09;
+    }
+
+    @media (max-width: $mobile) {
+      max-width: 89px;
+      font-size: 16px;
+    }
+  }
+}

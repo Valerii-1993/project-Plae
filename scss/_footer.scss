@@ -1,0 +1,66 @@
+.footer {
+  flex: 0 0 auto;
+  background-color: #f3f3f3;
+  padding-top: 133px;
+
+  @media (max-width: $tablet) {
+    padding-top: 50px;
+  }
+  @media (max-width: $mobile) {
+    padding-top: 20px;
+  }
+
+  &__title {
+    font: 600 30px/1 $secondary-font;
+
+    @media (max-width: $tablet) {
+      font-size: 25px;
+      line-height: 1;
+    }
+    @media (max-width: $mobile) {
+      font-size: 20px;
+      line-height: 1.1;
+    }
+  }
+
+  &__text {
+    font: 300 22px/2.13 $main-font;
+    margin-bottom: 35px;
+
+    @media (max-width: $tablet) {
+      font-size: 19px;
+      line-height: 1.8;
+    }
+    @media (max-width: $mobile) {
+      font-size: 15px;
+      line-height: 1.1;
+      margin-bottom: 15px;
+    }
+  }
+
+  &__content {
+    text-align: center;
+  }
+
+  &__box-copyright {
+    background-color: #dcdcdc;
+    margin-top: 113px;
+    @media (max-width: $mobile-L) {
+      margin-top: 45px;
+    }
+    @media (max-width: $mobile) {
+      margin-top: 25px;
+    }
+  }
+  &__copyright {
+    font: 200 12px/1 $main-font;
+    letter-spacing: 0.1em;
+    color: #ffffff;
+    padding: 14px 0 14px 35px;
+
+    @media (max-width: $mobile) {
+      font-size: 10px;
+      padding: 14px 0 14px 6px;
+    }
+  }
+}
